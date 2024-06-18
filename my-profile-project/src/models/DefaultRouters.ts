@@ -1,5 +1,5 @@
 export enum DefaultRoutes {
-    home = '/home',
+    home = '/',
     blog = '/blog',
     error = '/:pathMatch(.*)*'
 }

@@ -12,7 +12,7 @@
 
 import { describe, it, expect } from "vitest";
 import {mount} from '@vue/test-utils';
-import HeaderComponent from "../header/HeaderComponent.vue";
+import HeaderComponent from "../basicsComponents/header/HeaderComponent.vue";
 
 describe('Header', () => {
     it('Renderizou corretamente', () => {
