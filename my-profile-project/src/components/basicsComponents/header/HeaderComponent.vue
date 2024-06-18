@@ -11,7 +11,7 @@ const navigateTo = (path: string) => {
 
 </script>
 <template>
-  <header class="dark:bg-gray-800 flex justify-center items-center text-center header h-16">
+  <header class="dark:bg-primary-800 flex justify-center items-center text-center header h-16">
     <ul class="flex" v-for="(route, index) in routes" :key="index">
       <li class="mr-6">
         <a @click="navigateTo(route.path)" class="cursor-pointer text-blue-500 hover:text-blue-800">{{ route.name }}</a>

@@ -5,5 +5,9 @@ export const routes: Routes[] = [
     {
         name: "Home",
         path: DefaultRoutes.home
+    },
+    {
+        name: 'Blog',
+        path: DefaultRoutes.blog
     }
 ]
