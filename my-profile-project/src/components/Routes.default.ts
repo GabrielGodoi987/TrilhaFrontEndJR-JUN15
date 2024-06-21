@@ -9,5 +9,9 @@ export const routes: Routes[] = [
     {
         name: 'Blog',
         path: DefaultRoutes.blog
+    },
+    {
+        name: 'Login',
+        path: DefaultRoutes.login
     }
 ]
