@@ -5,3 +5,9 @@
 .text-white-color{
   color: white
 }
+
+.my-h1{
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #181818;
+}

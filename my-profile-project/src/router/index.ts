@@ -24,6 +24,11 @@ const router = createRouter({
           path: DefaultRoutes.blog,
           name: 'Blog',
           component: () => import('@/views/BlogView.vue')
+        },
+        {
+          name: "Login page",
+          path: DefaultRoutes.login,
+          component: () => import('@/views/AuthUser/SignUpUserView.vue')
         }
       ]
     }

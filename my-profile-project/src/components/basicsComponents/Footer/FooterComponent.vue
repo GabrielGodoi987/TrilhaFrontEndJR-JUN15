@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import {routes} from "@/components/Routes.default";
-import {navigateTo} from "@/utils/NavigationRoutes.util";
+import {useRouter} from 'vue-router';
+
+const router = useRouter();
+
+function navigateTo(path: string) {
+  return router.push(path);
+}
+
 </script>
 <template>
   <footer class="w-full h-16 bg-primary-800 mt-10">

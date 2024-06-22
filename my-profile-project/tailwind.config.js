@@ -12,6 +12,7 @@ export default {
                 },
                 second: {
                     '50': '#f9fafb',
+                    '100': '#f2f2f2',
                     '500': '#6b7280'
                 },
                 accent: {
