@@ -15,10 +15,19 @@
   </main>
 
   <section class="p-16 grid-cols-2 gap-1 mt-28 bg-second-100">
-    <div class="bg-primary-800 w-1/2 max-w-sm p-6 border border-gray-200 rounded-lg shadow">
+    <div class="w-1/2 bg-primary-800 p-12 rounded-lg">
       <h5 class="text-center dark:text-second-50 my-h1 mb-2 font-bold tracking-tight">Sobre mim</h5>
       <div class="card-content">
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Olá, como é bom ter você por aqui! Sou um desenvolvedor javaScript apaixonado pelo aprendizado contínuo, com
+          experiência em Vue.js, Vuetify, Pinia e Vite para construir interfaces de usuário incríveis. Trabalho com
+          TypeScript para garantir que minhas aplicações sejam robustas e escaláveis.
+          <br>
+          Além disso, tenho conhecimento em desenvolvimento de Web APIs usando Node.js, Express.js e Nest.js.
+          <br>
+          Estou sempre buscando aprender e me atualizar para criar projetos cada vez melhores. Estou animado para
+          contribuir com minha paixão pela programação para novos desafios!
+        </p>
       </div>
     </div>
   </section>
