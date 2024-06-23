@@ -14,8 +14,8 @@
     </div>
   </main>
 
-  <section class="p-16 grid-cols-2 gap-1 mt-28 bg-second-100">
-    <div class="w-1/2 bg-primary-800 p-12 rounded-lg">
+  <section class="md:grid-cols-1 p-16 grid-cols-2 gap-1 mt-28 bg-second-100">
+    <div class="md:w-1/2 bg-primary-800 p-12 rounded-lg">
       <h5 class="text-center dark:text-second-50 my-h1 mb-2 font-bold tracking-tight">Sobre mim</h5>
       <div class="card-content">
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">

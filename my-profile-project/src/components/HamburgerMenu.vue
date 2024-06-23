@@ -1,17 +1,15 @@
 <script setup lang="ts">
-import {ref} from 'vue';
+import { ref } from 'vue';
 
-const asideMenu = ref<boolean>(false);
-const classes = ref<string>('');
+const isMenuOpen = ref(false);
 const openAsideMenu = () => {
-  asideMenu.value = !asideMenu.value;
-  classes.value = 'openAsideMenu';
-  console.log(asideMenu.value);
-}
+  isMenuOpen.value = !isMenuOpen.value;
+  console.log(isMenuOpen.value);
+};
 </script>
 
 <template>
-  <button @click="openAsideMenu()" data-collapse-toggle="navbar-default" type="button"
+  <button @click="openAsideMenu" data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-default" aria-expanded="false">
     <span class="sr-only">Open main menu</span>
@@ -21,9 +19,8 @@ const openAsideMenu = () => {
     </svg>
   </button>
 
-  <aside v-if="asideMenu" :id="classes"
-         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-         aria-label="Sidebar">
+  <aside :class=" isMenuOpen ?  'block' : 'hidden'"
+         class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
       <ul class="space-y-2 font-medium">
         <li>
@@ -45,13 +42,4 @@ const openAsideMenu = () => {
 </template>
 
 <style scoped>
-
-#openAsideMenu{
-  display: block;
-}
-
-#default-sidebar {
-  display: none;
-}
-
 </style>

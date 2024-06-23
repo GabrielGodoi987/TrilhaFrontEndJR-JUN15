@@ -4,6 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {faArrowRightToBracket} from '@fortawesome/free-solid-svg-icons';
 import {DefaultRoutes} from "@/models/DefaultRouters";
 import {useRouter} from 'vue-router';
+import HamburgerMenu from "@/components/HamburgerMenu.vue";
 
 const router = useRouter();
 
@@ -13,7 +14,7 @@ function navigateTo(path: string) {
 </script>
 <template>
   <header class="bg-white text-primary-800 bg-primary-700 flex justify-center items-center text-center h-20">
-    <div class="max-w-screen-xl w-full flex items-center justify-between mx-auto p-4">
+    <div class="max-sm:hidden max-w-screen-xl w-full flex items-center justify-between mx-auto p-4">
       <div class="w-14">
         <img src="@/assets/logoImage.jpeg" alt="logo image" class="w-full rounded-full"/>
       </div>
@@ -33,5 +34,7 @@ function navigateTo(path: string) {
         </button>
       </div>
     </div>
+
+    <HamburgerMenu class="sm:hidden"></HamburgerMenu>
   </header>
 </template>
