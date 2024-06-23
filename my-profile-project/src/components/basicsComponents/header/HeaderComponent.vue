@@ -13,8 +13,8 @@ function navigateTo(path: string) {
 }
 </script>
 <template>
-  <header class="bg-white text-primary-800 bg-primary-700 flex justify-center items-center text-center h-20">
-    <div class="max-sm:hidden max-w-screen-xl w-full flex items-center justify-between mx-auto p-4">
+  <header class="bg-white text-primary-800 bg-primary-700 flex justify-center items-center text-center h-20" ID="hiddenClass">
+    <div class="max-w-screen-xl w-full flex items-center justify-between mx-auto p-4">
       <div class="w-14">
         <img src="@/assets/logoImage.jpeg" alt="logo image" class="w-full rounded-full"/>
       </div>
@@ -34,7 +34,13 @@ function navigateTo(path: string) {
         </button>
       </div>
     </div>
-
-    <HamburgerMenu class="sm:hidden"></HamburgerMenu>
   </header>
 </template>
+
+<style scoped>
+@media (width: 550px) {
+  #hiddenClass{
+    display: none !important;
+  }
+}
+</style>

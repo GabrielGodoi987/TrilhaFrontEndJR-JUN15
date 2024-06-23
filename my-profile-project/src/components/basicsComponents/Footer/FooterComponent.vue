@@ -10,10 +10,10 @@ function navigateTo(path: string) {
 
 </script>
 <template>
-  <footer class="w-full h-16 bg-primary-800 mt-10">
-    <div class="mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-        <span class="text-sm sm:text-center text-second-50 dark:text-gray-400">
-          © 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+  <footer class="w-full flex items-center h-40 bg-primary-800 mt-10">
+    <div class="mx-auto max-w-screen-xl p-4 gap-4 w-96 flex flex-col items-center justify-around">
+        <span class="text-sm text-center text-second-50 dark:text-gray-400">
+          Gabriel Godoi Desenvolvedor <strong class="text-accent-100">JavaScript</strong>
         </span>
       <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li v-for="(route, index) in routes" :key="index">

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import UiCardComponent from "@/components/page/UiCardComponent.vue";
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 </script>
 <template>
   <main class="h-1/3 flex justify-around items-center md:responsive-landing" id="landing-page">
@@ -14,20 +16,37 @@
     </div>
   </main>
 
-  <section class="md:grid-cols-1 p-16 grid-cols-2 gap-1 mt-28 bg-second-100">
-    <div class="md:w-1/2 bg-primary-800 p-12 rounded-lg">
-      <h5 class="text-center dark:text-second-50 my-h1 mb-2 font-bold tracking-tight">Sobre mim</h5>
-      <div class="card-content">
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Olá, como é bom ter você por aqui! Sou um desenvolvedor javaScript apaixonado pelo aprendizado contínuo, com
-          experiência em Vue.js, Vuetify, Pinia e Vite para construir interfaces de usuário incríveis. Trabalho com
-          TypeScript para garantir que minhas aplicações sejam robustas e escaláveis.
-          <br>
-          Além disso, tenho conhecimento em desenvolvimento de Web APIs usando Node.js, Express.js e Nest.js.
-          <br>
-          Estou sempre buscando aprender e me atualizar para criar projetos cada vez melhores. Estou animado para
-          contribuir com minha paixão pela programação para novos desafios!
-        </p>
+  <section>
+    <div class="grid grid-cols-1 md:grid-cols-2 p-16 gap-1 mt-28 bg-second-100">
+      <div>
+        <ui-card-component card-title="Seja bem vindo(a)" back-color="bg-primary-800">
+          <template #content>
+            <h5 class="text-center dark:text-second-50 my-h1 mb-4 font-bold">Seja bem vindo(a)</h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Olá, como é bom ter você por aqui! Sou um desenvolvedor javaScript apaixonado pelo aprendizado contínuo,
+              com
+              experiência em Vue.js, Vuetify, Pinia e Vite para construir interfaces de usuário incríveis. Trabalho com
+              TypeScript para garantir que minhas aplicações sejam robustas e escaláveis.
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Além disso, tenho conhecimento em desenvolvimento de Web APIs usando Node.js, Express.js e Nest.js.
+            </p>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Estou sempre buscando aprender e me atualizar para criar projetos cada vez melhores. Estou animado para
+              contribuir com minha paixão pela programação para novos desafios!
+            </p>
+          </template>
+        </ui-card-component>
+      </div>
+      <div>
+        <ui-card-component card-title="Minhas redes">
+          <template #content>
+            <h5 class="text-center text-primary-800 my-h1 mb-4 font-bold">Minhas Redes</h5>
+            <div class="flex flex-wrap justify-evenly items-center">
+              <font-awesome-icon :icon="['fab', 'github']" />
+            </div>
+          </template>
+        </ui-card-component>
       </div>
     </div>
   </section>
