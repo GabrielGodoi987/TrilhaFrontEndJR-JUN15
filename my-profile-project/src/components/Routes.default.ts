@@ -13,5 +13,9 @@ export const routes: Routes[] = [
     {
         name: 'Login',
         path: DefaultRoutes.login
+    },
+    {
+        name: 'Sobre',
+        path: DefaultRoutes.about
     }
 ]

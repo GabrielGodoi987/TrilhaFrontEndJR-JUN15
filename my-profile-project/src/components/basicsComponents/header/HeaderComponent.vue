@@ -13,7 +13,7 @@ function navigateTo(path: string) {
 }
 </script>
 <template>
-  <header class="bg-white text-primary-800 bg-primary-700 flex justify-center items-center text-center h-20" ID="hiddenClass">
+  <header class="hidden bg-white text-primary-800 bg-primary-700 md:flex justify-center items-center text-center h-20">
     <div class="max-w-screen-xl w-full flex items-center justify-between mx-auto p-4">
       <div class="w-14">
         <img src="@/assets/logoImage.jpeg" alt="logo image" class="w-full rounded-full"/>
@@ -27,7 +27,7 @@ function navigateTo(path: string) {
         </li>
       </ul>
       <div>
-        <button @click="navigateTo(DefaultRoutes.login)" type="button"
+        <button @click="navigateTo(DefaultRoutes.signup)" type="button"
                 class="flex flex-col items-center gap-1 hover:text-second-500 transition duration-300">
           <font-awesome-icon :icon="faArrowRightToBracket" class="text-2xl"/>
           <p class="text-sm">Cadastre-se</p>
@@ -35,12 +35,12 @@ function navigateTo(path: string) {
       </div>
     </div>
   </header>
+
+
+  <header class="sm:hidden block">
+    <HamburgerMenu/>
+  </header>
 </template>
 
 <style scoped>
-@media (width: 550px) {
-  #hiddenClass{
-    display: none !important;
-  }
-}
 </style>

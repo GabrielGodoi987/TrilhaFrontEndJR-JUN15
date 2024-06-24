@@ -4,5 +4,6 @@ export enum DefaultRoutes {
     login = '/login',
     signup = '/signup',
     forgotPassword = '/forgotPassword',
+    about = '/about',
     error = '/:pathMatch(.*)*'
 }

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import github from '@/assets/SVGImages/github.svg';
+import linkedin from '@/assets/SVGImages/linkedin.svg';
 import UiCardComponent from "@/components/page/UiCardComponent.vue";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 </script>
@@ -11,7 +13,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
     </div>
     <div>
       <div class="w-96 overflow-hidden md:mr-8">
-        <img src="@/assets/noBackgroundImageGabrielGodoi.png" alt="Sua Foto" class="w-full h-full">
+        <img src="@/assets/noBackgroundImageGabrielGodoi.png" alt="Sua Foto" class="w-full h-full rounded-full">
       </div>
     </div>
   </main>
@@ -22,16 +24,16 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
         <ui-card-component card-title="Seja bem vindo(a)" back-color="bg-primary-800">
           <template #content>
             <h5 class="text-center dark:text-second-50 my-h1 mb-4 font-bold">Seja bem vindo(a)</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-gray-700 dark:text-gray-400">
               Olá, como é bom ter você por aqui! Sou um desenvolvedor javaScript apaixonado pelo aprendizado contínuo,
               com
               experiência em Vue.js, Vuetify, Pinia e Vite para construir interfaces de usuário incríveis. Trabalho com
               TypeScript para garantir que minhas aplicações sejam robustas e escaláveis.
             </p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-gray-700 dark:text-gray-400">
               Além disso, tenho conhecimento em desenvolvimento de Web APIs usando Node.js, Express.js e Nest.js.
             </p>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="mb-3 text-gray-700 dark:text-gray-400">
               Estou sempre buscando aprender e me atualizar para criar projetos cada vez melhores. Estou animado para
               contribuir com minha paixão pela programação para novos desafios!
             </p>
@@ -42,8 +44,13 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
         <ui-card-component card-title="Minhas redes">
           <template #content>
             <h5 class="text-center text-primary-800 my-h1 mb-4 font-bold">Minhas Redes</h5>
-            <div class="flex flex-wrap justify-evenly items-center">
-              <font-awesome-icon :icon="['fab', 'github']" />
+            <div class="flex flex-wrap justify-evenly items-center w-full mt-10">
+              <a href="https://www.linkedin.com/in/gabriel-godoi-120770297/" target="_blank">
+                <img :src="github" class="h-16" alt="logo github">
+              </a>
+              <a href="https://github.com/GabrielGodoi987" target="_blank">
+                <img :src="linkedin" class="h-16" alt="logo linkedin">
+              </a>
             </div>
           </template>
         </ui-card-component>
