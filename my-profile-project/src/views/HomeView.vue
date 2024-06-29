@@ -12,14 +12,14 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
       <p class="text-gray-500">20 Anos</p>
     </div>
     <div>
-      <div class="w-96 overflow-hidden md:mr-8">
+      <div class="md:w-96 md:overflow-hidden md:mr-8">
         <img src="@/assets/noBackgroundImageGabrielGodoi.png" alt="Sua Foto" class="w-full h-full rounded-full">
       </div>
     </div>
   </main>
 
   <section>
-    <div class="grid grid-cols-1 md:grid-cols-2 p-16 gap-1 mt-28 bg-second-100">
+    <div class="md:grid grid-cols-1 md:grid-cols-2 p-16 gap-1 mt-28 bg-second-100">
       <div>
         <ui-card-component card-title="Seja bem vindo(a)" back-color="bg-primary-800">
           <template #content>
@@ -45,10 +45,10 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
           <template #content>
             <h5 class="text-center text-primary-800 my-h1 mb-4 font-bold">Minhas Redes</h5>
             <div class="flex flex-wrap justify-evenly items-center w-full mt-10">
-              <a href="https://www.linkedin.com/in/gabriel-godoi-120770297/" target="_blank">
+              <a href="https://github.com/GabrielGodoi987" target="_blank">
                 <img :src="github" class="h-16" alt="logo github">
               </a>
-              <a href="https://github.com/GabrielGodoi987" target="_blank">
+              <a href="https://www.linkedin.com/in/gabriel-godoi-120770297/" target="_blank">
                 <img :src="linkedin" class="h-16" alt="logo linkedin">
               </a>
             </div>

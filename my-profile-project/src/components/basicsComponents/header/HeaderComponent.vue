@@ -21,7 +21,7 @@ function navigateTo(path: string) {
       <ul class="flex space-x-6">
         <li v-for="(route, index) in routes" :key="index" class="hover:text-second-500">
           <a @click="navigateTo(route.path)"
-             class="cursor-pointer font-extrabold transition duration-300">
+             class="cursor-pointer font-extrabold transition duration-300 hover:text-accent-100">
             {{ route.name }}
           </a>
         </li>
@@ -29,15 +29,15 @@ function navigateTo(path: string) {
       <div>
         <button @click="navigateTo(DefaultRoutes.signup)" type="button"
                 class="flex flex-col items-center gap-1 hover:text-second-500 transition duration-300">
-          <font-awesome-icon :icon="faArrowRightToBracket" class="text-2xl"/>
-          <p class="text-sm">Cadastre-se</p>
+          <font-awesome-icon :icon="['fas', 'user']" class="font-bold text-2xl"/>
+          <p class="text-sm">Entre ou cadastre-se</p>
         </button>
       </div>
     </div>
   </header>
 
 
-  <header class="sm:hidden block">
+  <header class="flex justify-center items-center mt-4">
     <HamburgerMenu/>
   </header>
 </template>

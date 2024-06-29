@@ -1,50 +1,51 @@
 <script setup lang="ts">
 import {ref} from 'vue';
-import {routes} from './Routes.default'
+import {routes} from './Routes.default';
 import {useRouter} from "vue-router";
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+import {DefaultRoutes} from "@/models/DefaultRouters";
 
 const router = useRouter();
 
 const navigateTo = (path: string) => {
+  console.log(path);
   return router.push(path);
-}
+};
 
 const isMenuOpen = ref(false);
 const openAsideMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
-  console.log(isMenuOpen.value)
-  console.log(document.getElementById('navbar-default'));
 };
 </script>
 
 <template>
-  <nav class="sm:flex sm:justify-between">
-    <div class="sm:hidden">
-      <button class="relative group block" @click="openAsideMenu">
-        <div
-            class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-primary-800 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md">
-          <div
-              class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
-            <div
-                class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:rotate-[42deg]"></div>
-            <div
-                class="bg-white h-[2px] w-1/2 rounded transform transition-all duration-300 group-focus:-translate-x-10"></div>
-            <div
-                class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:-rotate-[42deg]"></div>
-          </div>
-        </div>
+  <nav class="md:hidden flex flex-col justify-between items-center w-full">
+    <div class="flex p-5 w-full justify-between items-center">
+      <button class="relative group block text-2xl" @click="openAsideMenu">
+        <font-awesome-icon :icon="faBars"/>
+      </button>
+      <button @click="navigateTo(DefaultRoutes.signup)" type="button"
+              class="flex flex-col items-center gap-1 hover:text-second-500 transition duration-300">
+        <font-awesome-icon :icon="['fas', 'user']" class="font-bold text-2xl"/>
+        <p class="text-sm">Entre ou cadastre-se</p>
       </button>
     </div>
 
-    <aside :class="isMenuOpen ? 'block' : 'hidden'" class="bg-primary-800 hidden w-full sm:block" id="navbar-default">
-      <ul class="sm:flex sm:flex-col items-center gap-1.5">
-        <li v-for="(route, index) in routes" :key="index" class="hidden h-full">
-          <a @click="navigateTo(route.path)" class="sm:inline-block px-2 py-1 font-semibold rounded-lg text-second-50">
-            {{ route.name }} </a>
+    <aside :class="isMenuOpen ? 'flex flex-col bg-primary-800 w-full h-fit mt-5 mb-10 md:hidden' : 'hidden'"
+           id="navbar-default"
+           aria-labelledby="aside-menu-label">
+      <ul class="font-medium flex flex-col p-4 mt-4 rounded-lg">
+        <li v-for="(route, index) in routes" :key="index">
+          <a @click="navigateTo(route.path)"
+             class="cursor-pointer block py-2 px-3 bg-second-500 rounded mb-2 text-white">
+            {{ route.name }}
+          </a>
         </li>
       </ul>
     </aside>
   </nav>
+
 </template>
 
 <style scoped>

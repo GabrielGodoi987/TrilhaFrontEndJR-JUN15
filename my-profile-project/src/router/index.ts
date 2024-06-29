@@ -26,19 +26,19 @@ const router = createRouter({
           component: () => import('@/views/BlogView.vue')
         },
         {
-          name: "Login page",
-          path: DefaultRoutes.login,
-          component: () => import('@/views/AuthUser/LoginUserView.vue')
-        },
-        {
-          name: "Sign up page",
-          path: DefaultRoutes.signup,
-          component: () => import('@/views/AuthUser/SignUpUserView.vue')
-        },
-        {
           name: "About Page",
           path: DefaultRoutes.about,
           component: () => import('@/views/AboutPage.vue')
+        },
+        {
+          name: 'Register Page',
+          path: DefaultRoutes.signup,
+          component: () => import('@/views/RegisterPage.vue')
+        },
+        {
+          name: 'Login Page',
+          path: DefaultRoutes.login,
+          component: () => import('@/views/AuthUser/LoginUser.vue')
         }
       ]
     }
