@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8e84148f-1a7f-4c74-880a-7f29b46f03ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/my-profile-project/.env" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/components/Routes.default.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/src/components/Routes.default.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/router/LoginRoutes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/service/Firebase.Config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/src/service/Firebase.Config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/service/UserModule/userLogin/UserLogin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/src/service/UserModule/userLogin/UserLogin.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/stores/User.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/src/stores/User.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-profile-project/src/views/BlogView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/my-profile-project/src/views/BlogView.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2iWhg55ozgGUMIR2zA1AE1MB8px" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/gabriel_godoi/Documents/GitHub/TrilhaFrontEndJR-JUN15/my-profile-project/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e84148f-1a7f-4c74-880a-7f29b46f03ff" name="Changes" comment="" />
+      <created>1719612351236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719612351236</updated>
+      <workItem from="1719612353357" duration="8253000" />
+      <workItem from="1719632832063" duration="7834000" />
+      <workItem from="1719674363642" duration="5676000" />
+      <workItem from="1719682913284" duration="1685000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
