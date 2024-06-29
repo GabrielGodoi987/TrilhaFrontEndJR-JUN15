@@ -7,14 +7,6 @@ export const routes: Routes[] = [
         path: DefaultRoutes.home
     },
     {
-        name: 'Blog',
-        path: DefaultRoutes.blog
-    },
-    {
-        name: 'Login',
-        path: DefaultRoutes.login
-    },
-    {
         name: 'Sobre',
         path: DefaultRoutes.about
     }

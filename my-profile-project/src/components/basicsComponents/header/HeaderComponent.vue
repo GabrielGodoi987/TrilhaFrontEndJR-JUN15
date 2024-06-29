@@ -26,13 +26,6 @@ function navigateTo(path: string) {
           </a>
         </li>
       </ul>
-      <div>
-        <button @click="navigateTo(DefaultRoutes.signup)" type="button"
-                class="flex flex-col items-center gap-1 hover:text-second-500 transition duration-300">
-          <font-awesome-icon :icon="['fas', 'user']" class="font-bold text-2xl"/>
-          <p class="text-sm">Entre ou cadastre-se</p>
-        </button>
-      </div>
     </div>
   </header>
 

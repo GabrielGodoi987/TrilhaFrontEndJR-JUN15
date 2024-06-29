@@ -25,11 +25,6 @@ const openAsideMenu = () => {
       <button class="relative group block text-2xl" @click="openAsideMenu">
         <font-awesome-icon :icon="faBars"/>
       </button>
-      <button @click="navigateTo(DefaultRoutes.signup)" type="button"
-              class="flex flex-col items-center gap-1 hover:text-second-500 transition duration-300">
-        <font-awesome-icon :icon="['fas', 'user']" class="font-bold text-2xl"/>
-        <p class="text-sm">Entre ou cadastre-se</p>
-      </button>
     </div>
 
     <aside :class="isMenuOpen ? 'flex flex-col bg-primary-800 w-full h-fit mt-5 mb-10 md:hidden' : 'hidden'"

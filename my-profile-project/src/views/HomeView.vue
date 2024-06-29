@@ -7,7 +7,7 @@ import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 <template>
   <main class="h-1/3 flex justify-around items-center md:responsive-landing" id="landing-page">
     <div class="text-center">
-      <h1 class="my-h1">Desenvolvedor Frontend</h1>
+      <h1 class="my-h1">Desenvolvedor JavaScript</h1>
       <h2 class="font-bold text-2xl text-gray-800">Gabriel Godoi</h2>
       <p class="text-gray-500">20 Anos</p>
     </div>
